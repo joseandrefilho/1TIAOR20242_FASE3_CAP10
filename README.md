@@ -19,7 +19,7 @@
 
 
 ## Objetivo
-Desenvolver um modelo de banco de dados normalizado que armazene e analise informações sobre a produção agrícola no Brasil. Os dados utilizados são oriundos de órgãos como CONAB, IBGE, MAPA, Embrapa, INPE ou CNABRASIL. O objetivo principal é criar um modelo que seja eficiente, estruturado e que permita consultas úteis para análise da produção agrícola por estado, safra e cultura.
+Desenvolver um modelo de banco de dados normalizado que armazene e analise informações sobre a produção agrícola no Brasil. Os dados utilizados são oriundos do CONAB. O objetivo principal é criar um modelo que seja eficiente, estruturado e que permita consultas úteis para análise da produção agrícola por estado, safra e cultura.
 
 ## 📁 Estrutura de pastas
 
