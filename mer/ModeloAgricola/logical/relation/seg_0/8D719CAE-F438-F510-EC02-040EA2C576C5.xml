@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="POSSUIv2" directorySegmentName="seg_0" id="8D719CAE-F438-F510-EC02-040EA2C576C5">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:16:48 UTC</createdTime>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<sourcePk>AD7E7067-AB5E-6A88-037E-45521EB254DA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>15EEBDFD-D9B4-1472-798C-237ACE8746F7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DBCAB05A-BFAD-1450-64DC-0612D2766EC6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
