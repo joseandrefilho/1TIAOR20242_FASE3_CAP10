@@ -27,7 +27,6 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - **assets**: Contém imagens e outros arquivos de mídia não estruturados relacionados ao projeto.
 - **mer**: Diretório que contém o arquivo do Modelo Entidade Relacionamento (MER), Diagrama Entidade Relacionamento (DER) e o arquivo de Definição de Dados (DDL), gerados pela ferramenta **Oracle SQL Developer Data Modeler**.
-- **scripts**: Scripts de criação das tabelas do banco de dados do PAB (Producao Agricola Brasileiro).
 - **README.md**: Arquivo de guia e explicação geral sobre o projeto (este que você está lendo agora).
 
 ## Estrutura do Projeto
@@ -63,7 +62,7 @@ Foram seguidas as seguintes convenções:
   - `un_` para constraints de unicidade.
 
 ### 6. Código SQL para Criação das Tabelas
-O código SQL foi desenvolvido para criar todas as tabelas e definir constraints de integridade. Os scripts estão disponíveis no repositório do GitHub, na pasta `scripts/`.
+O código SQL foi desenvolvido para criar todas as tabelas e definir constraints de integridade. Os scripts estão disponíveis no repositório do GitHub, na pasta `mer/`.
 
 ### 7. Consultas SQL para Análise
 Foram desenvolvidas as seguintes consultas para análise de dados:
@@ -148,7 +147,7 @@ Esta consulta gera um *ranking de produtividade média* por estado para uma cult
 Utiliza a função `AVG` para calcular a média de produtividade `(vl_produtividade)` para cada estado, considerando todas as safras disponíveis.
 Filtra por `cd_cultura` para focar em uma cultura específica e ordenar os estados em ordem decrescente de produtividade média.
 
-### 3. Ranking dos estados com maior produtividade média em uma cultura específica (independente da safra)
+### Exemplo de Resultado:
 
 | nm_estado        | nm_cultura | produtividade_media |
 |------------------|------------|---------------------|
@@ -161,7 +160,7 @@ Filtra por `cd_cultura` para focar em uma cultura específica e ordenar os estad
 ---
 
 ### 8. Documentação do Modelo
-- **Dicionário de Dados**: Foi criado um dicionário detalhado para cada tabela, especificando nome, tipo de dado e descrição de cada coluna.
+- **Dicionário de Dados**: Foi criado um dicionário detalhado para cada tabela, especificando nome, tipo de dado e descrição de cada coluna que se encontra no Readme da pasta `mer`.
 - **README.md**: O README inclui todas as informações necessárias para compreender o projeto, desde o objetivo até as consultas SQL.
 
 ## Como Executar

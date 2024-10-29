@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="15EEBDFD-D9B4-1472-798C-237ACE8746F7" name="T_PAB_REGIAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:11:24 UTC</createdTime>
+<comment><![CDATA[Armazena informações sobre as regiões associadas aos estados/províncias no sistema.]]></comment>
+<commentInRDBMS><![CDATA[Armazena informações sobre as regiões associadas aos estados/províncias no sistema.]]></commentInRDBMS>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>REGIAO</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_regiao" id="EED1BFD6-045B-AF8A-C9BA-83572DBF3E38">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 02:10:12 UTC</createdTime>
+<comment><![CDATA[Identificador único da região.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único da região.]]></commentInRDBMS>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_regiao" id="AC67F22E-B87B-D071-28A0-B216207F0A1D">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:12:23 UTC</createdTime>
+<comment><![CDATA[Nome da região (e.g., Norte, Sudeste). ]]></comment>
+<commentInRDBMS><![CDATA[Nome da região (e.g., Norte, Sudeste). ]]></commentInRDBMS>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_regiao" id="E98A9A21-43C8-EB56-2F53-0E0B9599E423">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:12:36 UTC</createdTime>
+<comment><![CDATA[Descrição adicional da região.]]></comment>
+<commentInRDBMS><![CDATA[Descrição adicional da região.]]></commentInRDBMS>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_pais" id="A72FC396-C720-5EDB-4317-C4EE7BB33CFF">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:16:07 UTC</createdTime>
+<comment><![CDATA[Código do país ao qual a região pertence.]]></comment>
+<commentInRDBMS><![CDATA[Código do país ao qual a região pertence.]]></commentInRDBMS>
+<generatorID>DC7A6D07-5F1B-EF2E-49EA-DCDFE8DD4DA1</generatorID>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<referedAttribute>A1515728-6684-175B-3CE6-4A9D625FCAEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD7E7067-AB5E-6A88-037E-45521EB254DA" name="T_PAB_REGIAO PK">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 00:13:41 UTC</createdTime>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EED1BFD6-045B-AF8A-C9BA-83572DBF3E38</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="230A3118-411D-3BFA-E527-3C1A896EB013" name="UN_REGIAO_NOME_PAIS">
+<createdBy>josea</createdBy>
+<createdTime>2024-10-28 02:45:38 UTC</createdTime>
+<ownerDesignName>ModeloAgrícola</ownerDesignName>
+<engineerTo>
+<item key="A9A89C7B-59FA-3F11-B543-B59B6F1F5C3C" value="true"/>
+</engineerTo>
+<newElementsIDs>AC67F22E-B87B-D071-28A0-B216207F0A1D,A72FC396-C720-5EDB-4317-C4EE7BB33CFF</newElementsIDs>
+<usedAttributes>
+<attributeRef>AC67F22E-B87B-D071-28A0-B216207F0A1D</attributeRef>
+<attributeRef>A72FC396-C720-5EDB-4317-C4EE7BB33CFF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

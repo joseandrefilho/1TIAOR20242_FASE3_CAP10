@@ -1,8 +1,8 @@
 # Oracle SQL Modeler Project
-ModeloAgricola/
-**/*.dmd
+# ModeloAgricola/
+# **/*.dmd
 
-**/*.localz
-**/*.local
-**/*.git
-**/*.DS_Store
+# **/*.localz
+# **/*.local
+# **/*.git
+# **/*.DS_Store
